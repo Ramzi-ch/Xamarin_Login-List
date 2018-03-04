@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Login_List"
+             x:Class="Login_List.MainPage"
+             BackgroundImage="back.jpg">
+
+        
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Frame BackgroundColor="Gray" Padding="1">
+            <Label Text="Root Campany Authetification" FontSize="Large" TextColor="Black" Margin="30"/>
+            </Frame>
+            <Frame BackgroundColor="White" HasShadow="False">
+                <StackLayout Orientation="Vertical" Spacing="10">
+                    <Entry x:Name="Mail" Text="{Binding Mail}" Placeholder="E-mail" PlaceholderColor="Gray" TextColor="Black" />
+                    <Entry x:Name="Password" Text="{Binding Password}" Placeholder="Password" PlaceholderColor="Gray" TextColor="Black" IsPassword="true"  />
+                </StackLayout>
+            </Frame>
+            <Button Command="{Binding SubmitCommand}" Text="Sign in" BackgroundColor="Bisque" />
+        </StackLayout>
+    </ContentPage.Content>
+
+   
+</ContentPage>
